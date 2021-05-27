@@ -1,0 +1,26 @@
+.clock-container {
+    display: flex;
+    justify-content: center;
+}
+.clock-container > .clock {
+    border: 1px solid red;
+}
+.clock {
+    display: flex;
+    font-family: 'monospace';
+    font-size: 50px;
+}
+.clock > .cell {
+    padding: 10px;
+}
+.clock > .colons {
+    display: flex;
+    flex-direction: column;
+}
+.colons {
+    justify-content: center;
+}
+.milisecond-display {
+    font-size: 10px;
+    color: blue;
+}
