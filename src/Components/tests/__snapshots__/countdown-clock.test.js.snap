@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component should be rendered correctly 1`] = `
+<div
+  className="clock-container"
+>
+  <div
+    className="clock"
+  >
+    <div
+      className="cell"
+    >
+      00
+    </div>
+    <div
+      className="colons"
+    >
+      <div>
+        :
+      </div>
+    </div>
+    <div
+      className="cell"
+    >
+      00
+    </div>
+    <div
+      className="colons"
+    >
+      <div>
+        :
+      </div>
+    </div>
+    <div
+      className="cell"
+    >
+      00
+    </div>
+    <div
+      className="colons"
+    >
+      <div>
+        :
+      </div>
+    </div>
+    <div
+      className="cell"
+    >
+      000
+    </div>
+  </div>
+</div>
+`;
