@@ -1,7 +1,7 @@
 import { expect, test } from '@jest/globals';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import CountdownClock from '../countdown-clock';
+import CountdownClock from '../src/Components/countdown-clock';
 
 jest.useFakeTimers();
 
