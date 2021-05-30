@@ -3,10 +3,10 @@ const path = require("path");
 module.exports = {
     "mode": "development",
     "entry": [
-        "./src/Components/countdown-clock.js",
+        "./src/demo.js"
     ],
     "output": {
-        "filename": "countdown-clock.js"
+        "filename": "demo.bundled.js"
     },
     "module": {
         "rules": [

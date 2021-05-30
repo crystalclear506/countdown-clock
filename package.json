@@ -2,13 +2,14 @@
   "name": "countdown-clock",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "jest",
+    "build:demo": "webpack --config webpack-demo.config.js",
     "build": "webpack",
-    "start": "webpack serve",
+    "start": "webpack serve --config webpack-demo.config.js",
     "lint": "eslint"
   },
+  "main": "dist/countdown-clock.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
