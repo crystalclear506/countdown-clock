@@ -6,7 +6,9 @@ module.exports = {
         "./src/Components/countdown-clock.js",
     ],
     "output": {
-        "filename": "countdown-clock.js"
+        "filename": "countdown-clock.js",
+        "library": "@crystalclear506/countdown-clock",
+        "libraryTarget": "umd"
     },
     "module": {
         "rules": [
