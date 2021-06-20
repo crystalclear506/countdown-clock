@@ -1,0 +1,28 @@
+.input {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 10px;
+    border-radius: 3px;
+
+}
+
+.input.custom-input > :nth-last-child(1) {
+    margin-left: 10px;
+}
+
+.dashboard-container {
+    max-width: 500px;
+}
+
+.display {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+    min-height: 500px;
+}
+
+body {
+    background-color: #f0f0f0;
+}
