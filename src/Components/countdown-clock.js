@@ -1,6 +1,6 @@
 import React from 'react';
 import Cell from './cell';
-import './styles/style.css';
+import styles from './styles/style.css';
 
 const Colons = () => <div className='colons'><div>:</div></div>;
 class CountdownClock extends React.Component {
@@ -87,8 +87,8 @@ class CountdownClock extends React.Component {
 
     render() {
         return (
-            <div className='clock-container'>
-                <div className='clock'>
+            <div className={styles['clock-container']}>
+                <div className={styles.clock}>
                     <Cell value={ this._getHour() } />
                     <Colons/>
                     <Cell value={ this._getMinute() } />
