@@ -1,8 +1,6 @@
 import React from 'react';
-import Cell from './cell';
 import styles from './styles/style.css';
 
-const Colons = () => <div className='colons'><div>:</div></div>;
 class CountdownClock extends React.Component {
     constructor(props) {
         super(props);
@@ -16,6 +14,7 @@ class CountdownClock extends React.Component {
             endTime: null,
             isTimeout: false,
         };
+        this.initializeClock();
     }
 
     setCountdownEnd(endTime) {
@@ -48,10 +47,10 @@ class CountdownClock extends React.Component {
         let hoursDisp = hours % 24;
         let daysDisp;
 
-        milisDisp = Math.floor(milisDisp);
-        secondsDisp = Math.floor(secondsDisp);
-        minutesDisp = Math.floor(minutesDisp);
-        hoursDisp = Math.floor(hoursDisp);
+        milisDisp = Math.floor(milisDisp/10).toString().padStart(2, '0');
+        secondsDisp = Math.floor(secondsDisp).toString().padStart(2, '0');
+        minutesDisp = Math.floor(minutesDisp).toString().padStart(2, '0');
+        hoursDisp = Math.floor(hoursDisp).toString().padStart(2, '0');
         daysDisp = Math.floor(days);
 
         this.setState({
@@ -73,33 +72,27 @@ class CountdownClock extends React.Component {
         }, 1);
     }
 
-    _getHour() {
-        return this.state.hoursDisp.toString().padStart(2, '0');
-    }
-
-    _getMinute() {
-        return this.state.minutesDisp.toString().padStart(2, '0');
-    }
-
-    _getSecond() {
-        return this.state.secondsDisp.toString().padStart(2, '0');
-    }
-
-    _getMilisecond() {
-        return this.state.milisDisp.toString().padStart(3, '0'); 
-    }
-
     render() {
         return (
             <div className={styles['clock-container']}>
                 <div className={styles.clock}>
-                    <Cell value={ this._getHour() } />
-                    <Colons/>
-                    <Cell value={ this._getMinute() } />
-                    <Colons/>
-                    <Cell value={ this._getSecond() } />
-                    <Colons/>
-                    <Cell value={ this._getMilisecond() } />
+                    <div className={styles.cell}> 
+                        <div>{ this.state.daysDisp }</div>
+                        <div className={styles.label}> Days </div> 
+                    </div>
+                    <div className={styles.cell}> 
+                        <div>{ this.state.hoursDisp }</div>
+                        <div className={styles.label}> Hours </div> 
+                    </div>
+                    <div className={styles.cell}> 
+                        <div>{ this.state.minutesDisp }</div>
+                        <div className={styles.label}> Minutes </div> 
+                    </div>
+                    <div className={styles.cell}> 
+                        <div>{ this.state.secondsDisp }</div>
+                        <div className={styles.label}> Seconds </div> 
+                    </div>
+
                 </div>
             </div>
         );

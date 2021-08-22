@@ -23,11 +23,14 @@ const DemoPage = () => {
                 <div className='input one-minute'>
                     <button onClick={ e => setTimeCustom(ref.current, 60) } > Set One Minute </button>
                 </div>
-                <div className='input one-hour'>
+                <div className='input'>
                     <button onClick={ e => setTimeCustom(ref.current, 60 * 60) } > Set One Hour </button>
                 </div>
-                <div className='input one-hour'>
+                <div className='input'>
                     <button onClick={ e => setTimeCustom(ref.current, 60 * 60 * 24) } > Set One Day </button>
+                </div>
+                <div className='input'>
+                    <button onClick={ e => setTimeCustom(ref.current, 60 * 60 * 24 * 7) } > Set 7 Days </button>
                 </div>
                 <div className='input custom-input'>
                     <input placeholder="Please input seconds" ref={ inputRef }></input>
