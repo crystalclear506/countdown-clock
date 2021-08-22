@@ -63,6 +63,10 @@ class CountdownClock extends React.Component {
         });
     }
 
+    componentWillUnmount() {
+        clearInterval(this.intervalId);
+    }
+
     initializeClock() {
         this.intervalId = setInterval(() => {
             this._onUpdateInterval();
