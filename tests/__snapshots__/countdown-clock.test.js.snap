@@ -10,43 +10,50 @@ exports[`Component should be rendered correctly 1`] = `
     <div
       className="cell"
     >
-      00
-    </div>
-    <div
-      className="colons"
-    >
       <div>
-        :
+        0
+      </div>
+      <div
+        className="label"
+      >
+         Days 
       </div>
     </div>
     <div
       className="cell"
     >
-      00
-    </div>
-    <div
-      className="colons"
-    >
       <div>
-        :
+        00
+      </div>
+      <div
+        className="label"
+      >
+         Hours 
       </div>
     </div>
     <div
       className="cell"
     >
-      00
-    </div>
-    <div
-      className="colons"
-    >
       <div>
-        :
+        00
+      </div>
+      <div
+        className="label"
+      >
+         Minutes 
       </div>
     </div>
     <div
       className="cell"
     >
-      000
+      <div>
+        00
+      </div>
+      <div
+        className="label"
+      >
+         Seconds 
+      </div>
     </div>
   </div>
 </div>

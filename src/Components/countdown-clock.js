@@ -6,15 +6,14 @@ class CountdownClock extends React.Component {
         super(props);
 
         this.state = {
-            secondsDisp: '',
-            minutesDisp: '',
-            hoursDisp: '',
-            daysDisp: '',
-            milisDisp: '',
+            secondsDisp: '00',
+            minutesDisp: '00',
+            hoursDisp: '00',
+            daysDisp: '0',
+            milisDisp: '00',
             endTime: null,
             isTimeout: false,
         };
-        this.initializeClock();
     }
 
     setCountdownEnd(endTime) {

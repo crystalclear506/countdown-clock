@@ -26,11 +26,11 @@ test('Countdown should decrement correctly', (done) => {
     
     
     setTimeout(() => {
-        expect(component.state.secondsDisp).toBe(30);
+        expect(component.state.secondsDisp).toBe("30");
     }, seconds / 2);
 
     setTimeout(() => {
-        expect(component.state.secondsDisp).toBe(0);
+        expect(component.state.secondsDisp).toBe("00");
     }, seconds);    
     
     jest.runAllTimers();
